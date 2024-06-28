@@ -1,0 +1,22 @@
+{
+    "name": "ratingthomas/components",
+    "description": "A easy to use component libray",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ratingthomas\\Components\\": "src/"
+        }
+    },
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Thomas Levels",
+            "email": "92450283+Ratingthomas@users.noreply.github.com",
+            "homepage": "https://codestate.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0"
+    }
+}
