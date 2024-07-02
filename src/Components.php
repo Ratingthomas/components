@@ -14,7 +14,8 @@ class Components{
         $components = new \stdClass();
 
         foreach($files as $file){
-            $name = basename(substr($file, 0, strpos($file, '.')));
+            $name = basename($file);
+            $name = substr($name, 0, strpos($name, '.'));
 
             $components = array_merge((array) $components, [
                 $name => file_get_contents($file, true)
