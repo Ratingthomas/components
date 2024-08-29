@@ -38,6 +38,13 @@ class Components{
         echo $renderedTemplate;
     }
 
+    public function return(string $name, array $params){
+        $templateContent = $this->components->$name;
+
+        $renderedTemplate = $this->replacePlaceholders($templateContent, $params);
+        return $renderedTemplate;
+    }
+
     private function replacePlaceholders($template, $values)
     {
         foreach ($values as $key => $value) {
